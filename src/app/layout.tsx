@@ -4,7 +4,7 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://your-portfolio.vercel.app"),
+  metadataBase: new URL("https://tanvirahsan.vercel.app/"),
 
   title: {
     default: "MD Tanvir Ahsan | Full Stack Web Developer",
