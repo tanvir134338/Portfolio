@@ -1,26 +1,126 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #09090b;
+  --foreground: #f4f4f5;
+  --surface: #18181b;
+  --muted: #a1a1aa;
+  --accent: #8b5cf6;
+  --border: #27272a;
+}
+
+:root {
+  --background: #08080b;
+  --foreground: #fafafa;
+  --surface: #111118;
+  --muted: #a1a1aa;
+  --accent: #a855f7;
+  --border: #27212e;
+
+  --gradient: linear-gradient(100deg, #a855f7 0%, #ec4899 55%, #f43f5e 100%);
+}
+
+:root[data-theme="light"] {
+  --background: #faf9fc;
+  --foreground: #18121f;
+  --surface: #ffffff;
+  --muted: #716b78;
+  --accent: #9333ea;
+  --border: #e8e0ed;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-surface: var(--surface);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-border: var(--border);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.gradient-text {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.gradient-button {
+  background: var(--gradient);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.gradient-button:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+}
+
+.hero-glow {
+  background:
+    radial-gradient(
+      circle at 35% 45%,
+      rgba(168, 85, 247, 0.16),
+      transparent 40%
+    ),
+    radial-gradient(circle at 65% 50%, rgba(244, 63, 94, 0.13), transparent 40%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+::selection {
+  background: var(--accent);
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+:root[data-theme="light"] {
+  --background: #f8fafc;
+  --foreground: #18181b;
+  --surface: #ffffff;
+  --muted: #71717a;
+  --accent: #8b5cf6;
+  --border: #e4e4e7;
+}
+
+/* Resume Button Text Color */
+
+.resume-button {
+  color: #09090b;
+}
+
+:root[data-theme="light"] .resume-button {
+  color: #ffffff;
+}
+
+/* Gradient Button Text Color */
+
+.gradient-button.gradient-text-button {
+  color: #09090b;
+}
+
+:root[data-theme="light"] .gradient-button.gradient-text-button {
+  color: #ffffff;
 }
