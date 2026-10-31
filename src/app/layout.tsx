@@ -6,6 +6,10 @@ import Navbar from "./components/Navbar";
 export const metadata: Metadata = {
   metadataBase: new URL("https://tanvirahsan.vercel.app/"),
 
+  verification: {
+    google: "qSO60FvpxBIZ_8SR4PMobfpUSCRsGzLHk5j1zObWo9E",
+  },
+
   title: {
     default: "MD Tanvir Ahsan | Full Stack Web Developer",
     template: "%s | MD Tanvir Ahsan",
