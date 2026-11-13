@@ -4,6 +4,16 @@ import { ExternalLink } from "lucide-react";
 
 const projects = [
   {
+    title: "Studio Space",
+    category: "Developer Tool",
+    description:
+      "A studio booking platform that helps users discover creative spaces, explore listings, and manage reservations through a clean and intuitive interface.",
+    image: "/images/projects/studio-space.png",
+    technologies: ["React", "TypeScript", "Tailwind CSS", "Vite"],
+    liveUrl: "https://studiospace-a-08.vercel.app/",
+    githubUrl: "https://github.com/tanvir134338/studiospace-a-08",
+  },
+  {
     title: "Bazar Dor",
     category: "Market Price Tracking",
     description:
@@ -22,16 +32,6 @@ const projects = [
     technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
     liveUrl: "https://assignment-06-b14-fitlog.vercel.app/",
     githubUrl: "https://github.com/tanvir134338/assignment-06-b14-fitlog",
-  },
-  {
-    title: "Dev Stack Builder",
-    category: "Developer Tool",
-    description:
-      "A developer-focused application built to provide a clean interface and simplify the project setup experience.",
-    image: "/images/projects/dev-stack-builder.png",
-    technologies: ["React", "TypeScript", "Tailwind CSS", "Vite"],
-    liveUrl: "https://dev-stack-builder-2026.netlify.app/",
-    githubUrl: "https://github.com/tanvir134338/dev-stack-builder-A05-b14",
   },
 ];
 
