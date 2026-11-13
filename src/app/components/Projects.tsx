@@ -9,7 +9,14 @@ const projects = [
     description:
       "A studio booking platform that helps users discover creative spaces, explore listings, and manage reservations through a clean and intuitive interface.",
     image: "/images/projects/studio-space.png",
-    technologies: ["React", "TypeScript", "Tailwind CSS", "Vite"],
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Express.js",
+      "MongoDB",
+      "Better Auth",
+    ],
     liveUrl: "https://studiospace-a-08.vercel.app/",
     githubUrl: "https://github.com/tanvir134338/studiospace-a-08",
   },
